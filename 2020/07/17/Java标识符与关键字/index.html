@@ -16,20 +16,13 @@
   
   
   
-    <meta name="description" content="Hexo常用指令长期更新
-指令1、建立文章1$ hexo new "文章名称"
+    <meta name="description" content="Java标识符与关键字Hexo常用指令Java语言也和其他语言一样，使用标识符作为变量、对象的名字，也提供了系列的关键字用以实现特别的功能。
+标识符标识符规则Java 中标识符是用于给程序中变量、类、方法命名的符号。
+标识符可以有一个或多个字符。在 Java 语言中，标识符的构成规则如下：
 
-
-
-2、本地编译1$ hexo g
-
-3、启动本地服务器1$ hexo server
-
-4、上传到Github1$ hexo d
-
-5、编译上传合并1$ hexo g -d">
+标识符由数字（09）和字母（AZ 和 a~z）、美元符号（$）、下划线（_）以及 Unicode 字...">
   
-  <title>hexo指令 [ Heiye ]</title>
+  <title>Java标识符和关键字 [ Heiye ]</title>
   
   
     <link rel="shortcut icon" href="/hollow.ico">
@@ -49,6 +42,15 @@
 
 <body>
 <div class="side-navigate hide-area">
+  
+    <div class="item prev">
+      <a href="/2020/07/17/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        hexo指令
+      </div>
+    </div>
   
   
     <div class="item next">
@@ -126,7 +128,7 @@
   
 
   <article id="post">
-    <h1>hexo指令</h1>
+    <h1>Java标识符和关键字</h1>
     <p class="page-title-sub">
       <span id = "post-title-date">撰写于 2020-07-17</span>
       
@@ -138,7 +140,7 @@
       
         
         
-        <a href="/categories/hexo/">hexo</a>
+        <a href="/categories/Java/">Java</a>
       
       </span>
       
@@ -149,36 +151,54 @@
       
         
         
-        <a href="/tags/hexo-%E6%8C%87%E4%BB%A4/">hexo 指令</a>
+        <a href="/tags/Java/">Java</a>
       
       </span>
       
     </p>
     
-    <h1 id="Hexo常用指令"><a href="#Hexo常用指令" class="headerlink" title="Hexo常用指令"></a>Hexo常用指令</h1><p>长期更新</p>
-<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><h3 id="1、建立文章"><a href="#1、建立文章" class="headerlink" title="1、建立文章"></a>1、建立文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"文章名称"</span></span><br></pre></td></tr></table></figure>
+    <h1 id="Java标识符与关键字"><a href="#Java标识符与关键字" class="headerlink" title="Java标识符与关键字"></a>Java标识符与关键字</h1><h1 id="Hexo常用指令"><a href="#Hexo常用指令" class="headerlink" title="Hexo常用指令"></a>Hexo常用指令</h1><p>Java语言也和其他语言一样，使用标识符作为变量、对象的名字，也提供了系列的关键字用以实现特别的功能。</p>
+<h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><h3 id="标识符规则"><a href="#标识符规则" class="headerlink" title="标识符规则"></a>标识符规则</h3><p>Java 中标识符是用于给程序中变量、类、方法命名的符号。</p>
+<p>标识符可以有一个或多个字符。在 Java 语言中，标识符的构成规则如下：</p>
+<ul>
+<li><p>标识符由数字（0<del>9）和字母（A</del>Z 和 a~z）、美元符号（$）、下划线（_）以及 Unicode 字符集中符号大于 0xC0 的所有符号组合构成（各符号之间没有空格）。</p>
+</li>
+<li><p>标识符的第一个符号为字母、下划线和美元符号，后面可以是任何字母、数字、美元符号或下划线。</p>
+</li>
+<li><p>另外，Java 区分大小写，因此 myvar 和 MyVar 是两个不同的标识符。</p>
+</li>
+<li><p>标识符不能是Java关键字和保留字，但可以包含关键字和保留字。</p>
+</li>
+<li><p>标识符不能包含空格</p>
+</li>
+<li><p>标识符只能包含美元符（$），不能包含@、#等其他特殊符号</p>
+</li>
+</ul>
+<h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><h3 id="关键字介绍"><a href="#关键字介绍" class="headerlink" title="关键字介绍"></a>关键字介绍</h3><p>关键字（或者保留字）是对编译器有特殊意义的固定单词，不能在程序中做其他目的使用。关键字具有专门的意义和用途，和自定义的标识符不同，不能当作一般的标识符来使用。</p>
+<p>Java 的关键字对 Java 编译器有特殊的意义，它们用来表示一种数据类型，或者表示程序的结构等。保留字是为 Java 预留的关键字，它们虽然现在没有作为关键字，但在以后的升级版本中有可能作为关键字。</p>
+<p>Java 语言目前定义了 51 个关键字，这些关键字不能作为变量名、类名和方法名来使用。以下对这些关键字进行了分类。</p>
+<ul>
+<li>数据类型：boolean、int、long、short、byte、float、double、char、class、interface。</li>
+<li>流程控制：if、else、do、while、for、switch、case、default、break、continue、return、try、catch、finally。</li>
+<li>修饰符：public、protected、private、final、void、static、strict、abstract、transient、synchronized、volatile、native。</li>
+<li>动作：package、import、throw、throws、extends、implements、this、supper、instanceof、new。</li>
+<li>保留字：true、false、null、goto、const。</li>
+</ul>
 
-
-
-<h3 id="2、本地编译"><a href="#2、本地编译" class="headerlink" title="2、本地编译"></a>2、本地编译</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、启动本地服务器"><a href="#3、启动本地服务器" class="headerlink" title="3、启动本地服务器"></a>3、启动本地服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、上传到Github"><a href="#4、上传到Github" class="headerlink" title="4、上传到Github"></a>4、上传到Github</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<h3 id="5、编译上传合并"><a href="#5、编译上传合并" class="headerlink" title="5、编译上传合并"></a>5、编译上传合并</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
   </article>
   <div class="random-toc-area">
   <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
   <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
   <div class="random-toc">
     <h2>目录</h2>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo常用指令"><span class="toc-text">Hexo常用指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#指令"><span class="toc-text">指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、建立文章"><span class="toc-text">1、建立文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、本地编译"><span class="toc-text">2、本地编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、启动本地服务器"><span class="toc-text">3、启动本地服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、上传到Github"><span class="toc-text">4、上传到Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、编译上传合并"><span class="toc-text">5、编译上传合并</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java标识符与关键字"><span class="toc-text">Java标识符与关键字</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hexo常用指令"><span class="toc-text">Hexo常用指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#标识符"><span class="toc-text">标识符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#标识符规则"><span class="toc-text">标识符规则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关键字"><span class="toc-text">关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关键字介绍"><span class="toc-text">关键字介绍</span></a></li></ol></li></ol></li></ol>
   </div>
 </div>
 
   
 <nav id="pagination">
+  
+    <a href="/2020/07/17/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" class="prev">&larr; 上一篇 hexo指令</a>
   
 
   
